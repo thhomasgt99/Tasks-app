@@ -14,4 +14,4 @@
 + create-react-app -> Instala todo lo necesario para trabajar con react.
 + gh-pages -> Nos ayuda a pasar la compilacion directamaente a github-pages en forma estatica. Su forma de actuar es que embiara a github la carpeta de compilado(incluso si esta en gitignore alparecer) pero sobre una rama que creara github llamada gh-pages que sera de donde github-pages tomara los archivos estaticos para presentarlos
 ##### *Nota: gh-pages necesita la confiuracion del packcage.json homepage para montar la ruta de github-pages*
-##### *Nota: Para que se vea en github-pages devemos siempre ejecutar 'npm run build' y luego 'npm run deploy', para crear el compilado en local y luego que la herramienta gh-pages suba ese compilado a la rama con el mismo nombre*
+##### *Nota: Para que se vea en github-pages devemos siempre ejecutar 'npm run build', 'npm run deploy' y luego mandar los cambios normalmente, para crear el compilado en local y luego que la herramienta gh-pages suba ese compilado a la rama con el mismo nombre*
