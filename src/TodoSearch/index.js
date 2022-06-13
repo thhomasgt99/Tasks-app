@@ -8,13 +8,15 @@ function TodoSearch({ searchValue, setSearchValue, loading }) {
   };
 
   return (
-    <input
-      className="TodoSearch"
-      placeholder="Cebolla"
-      value={searchValue}
-      onChange={onSearchValueChange}
-      disabled={loading}
-    />
+    <div>
+      <input
+        className="TodoSearch"
+        placeholder="Search"
+        value={searchValue}
+        onChange={onSearchValueChange}
+        disabled={loading}/>
+        {/* <i style="color: #cac7c0;"  class="fa-solid fa-magnifying-glass"/> */}
+    </div>
   );
 }
 

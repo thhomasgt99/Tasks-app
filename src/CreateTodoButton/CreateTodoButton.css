@@ -6,8 +6,8 @@
   cursor: pointer;
   font-size: 50px;
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  top: 30px;
+  right: 5%;
   font-weight: bold;
   color: #FAFAFA;
   display: flex;

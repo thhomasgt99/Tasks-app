@@ -1,13 +1,17 @@
 .TodoItem {
-  background-color: #292d31;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 24px;
+  border-bottom: 2px solid;
+  border-radius: 2px;
+}
+.TodoItem:hover {
+  border-color: rgb(240, 98, 37);
 }
 .TodoItem-p {
-  color: #ffffff;
+  color: #5f5e5e;
   margin: 24px 0 24px 24px;
   width: calc(100% - 120px);
   font-size: 18px;
