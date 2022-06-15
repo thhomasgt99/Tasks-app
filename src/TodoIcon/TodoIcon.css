@@ -5,7 +5,6 @@
   align-items: center;
   height: 48px;
   width: 48px;
-  /* background-color: #CCC; */
 }
 .Icon-container--check {
   position: absolute;
@@ -13,7 +12,7 @@
 }
 .Icon-container--delete {
   position: absolute;
-  top: -24px;
+  /* top: -24px; */
   right: 0;
 }
 
@@ -27,4 +26,7 @@
 }
 .Icon-container:hover .Icon-svg--delete {
   fill: red;
+}
+.Icon-container:hover .Icon-svg--lupa {
+  fill: #ff0000ea;
 }

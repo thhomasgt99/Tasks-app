@@ -1,7 +1,11 @@
+.search {
+  display: flex;
+}
+.Icon-container .Icon-svg--lupa {
+  margin-top: calc((64px / 2) - 8px);
+}
 .TodoSearch {
-  /* background: #eaecef; */
   border-radius: 2px;
-  /* border: 2px solid #323742; */
   background: #fcf6e6;
   border: 0;
   border-bottom: 2px solid #ff0000ea;
@@ -9,10 +13,9 @@
   height: 64px;
   width: calc(100% - 62px);
   font-size: 24px;
-  text-align: center;
+  text-align: start;
   font-family: 'Montserrat';
   font-weight: 400;
-  /* color: #cacacd; */
 }
 
 .TodoSearch::placeholder {
