@@ -7,6 +7,9 @@
   border-bottom: 2px solid;
   border-radius: 2px;
 }
+.options {
+  display: none;
+}
 .TodoItem:hover {
   border-color: rgb(240, 98, 37);
 }

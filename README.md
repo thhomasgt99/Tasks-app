@@ -15,4 +15,4 @@
 + gh-pages -> Nos ayuda a pasar la compilacion directamaente a github-pages en forma estatica. Su forma de actuar es que embiara a github la carpeta de compilado(incluso si esta en gitignore alparecer) pero sobre una rama que creara github llamada gh-pages que sera de donde github-pages tomara los archivos estaticos para presentarlos.
 ##### *Nota: gh-pages necesita la confiuracion del packcage.json homepage para montar la ruta de github-pages.*
 ##### *Nota: Para que se vean los cambios en github-pages devemos siempre ejecutar 'npm run build', 'npm run deploy' y luego mandar los cambios normalmente, esto para crear el compilado en local y luego que la herramienta gh-pages suba ese compilado a la rama con el mismo nombre.*
-##### *Nota: alparecer puedo ahora solo correr el comanfo deploy y por defecto se ejecutara el predeploy que es otro comando creado por nosotros para que ejecute los comandos necesarios antes del deploy*
+##### *Nota: alparecer puedo ahora solo correr el comando deploy y por defecto se ejecutara el predeploy que es otro comando creado por nosotros para que ejecute los comandos necesarios antes del deploy*

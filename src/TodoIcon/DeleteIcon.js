@@ -1,11 +1,14 @@
 import React from 'react';
 import { TodoIcon } from './';
+import { useTodos } from '../App/useTodos';
 
-function DeleteIcon({ onDelete }) {
+function DeleteIcon(props) {
+	const { deleteTodo }= useTodos()
+	console.log('desde deleteIcon: ' + props.text)
   return (
     <TodoIcon
       type="delete"
-      onClick={onDelete}
+      onClick={()=>deleteTodo(props.text)}
     />
   );
 }

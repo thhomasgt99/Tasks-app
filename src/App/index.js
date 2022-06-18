@@ -28,8 +28,8 @@ function App() {
     setSearchValue,
     addTodo,
     sincronizeTodos,
+    miArray,
   } = useTodos();
-  
   return (
     <React.Fragment>
       <TodoHeader loading={loading}>
@@ -56,13 +56,16 @@ function App() {
           (searchText) => <p>No hay resultados para {searchText}</p>
         }
       >
+        
         {todo => (
           <TodoItem
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
+            // onDelete={() => deleteTodo(todo.text)}
+            totalTodos={totalTodos}
+            miArray={miArray}
           />
         )}
       </TodoList>

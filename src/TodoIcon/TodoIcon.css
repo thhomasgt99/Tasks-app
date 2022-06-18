@@ -24,9 +24,15 @@
 .Icon-container:hover .Icon-svg--check {
   fill: #4caf50;
 }
+.Icon-container:hover .Icon-svg--menu {
+  fill: rgb(240, 98, 37);
+}
 .Icon-container:hover .Icon-svg--delete {
-  fill: red;
+  fill: #ff0000ea;
 }
 .Icon-container:hover .Icon-svg--lupa {
   fill: #ff0000ea;
+}
+.Icon-container:hover .Icon-svg--edit {
+  fill: rgb(240, 98, 37);
 }

@@ -1,9 +1,15 @@
 import React from 'react';
 import { CompleteIcon } from '../TodoIcon/CompleteIcon';
-import { DeleteIcon } from '../TodoIcon/DeleteIcon';
+import { Menu } from '../TodoIcon/Menu';
+import Options from '../Options';
 import './TodoItem.css';
 
 function TodoItem(props) {
+  
+  const id = ()=>(
+      props.miArray.findIndex((e) => e.text === props.text)//este seria el index y se le pasa como prop a options
+  )
+  
   return (
     <li className="TodoItem">
       <CompleteIcon
@@ -15,9 +21,11 @@ function TodoItem(props) {
         {props.text}
       </p>
 
-      <DeleteIcon
-        onDelete={props.onDelete}
+      <Menu
+        id={id()}
       />
+
+      <Options text={props.text} id={`id-${id()}`}/>
     </li>
   );
 }
