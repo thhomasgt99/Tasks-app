@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Tasks-app/static/css/main.82bec012.chunk.css",
-    "main.js": "/Tasks-app/static/js/main.7e0eea68.chunk.js",
-    "main.js.map": "/Tasks-app/static/js/main.7e0eea68.chunk.js.map",
+    "main.js": "/Tasks-app/static/js/main.d9a5e576.chunk.js",
+    "main.js.map": "/Tasks-app/static/js/main.d9a5e576.chunk.js.map",
     "runtime-main.js": "/Tasks-app/static/js/runtime-main.21d9133c.js",
     "runtime-main.js.map": "/Tasks-app/static/js/runtime-main.21d9133c.js.map",
     "static/js/2.f3c835d1.chunk.js": "/Tasks-app/static/js/2.f3c835d1.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.21d9133c.js",
     "static/js/2.f3c835d1.chunk.js",
     "static/css/main.82bec012.chunk.css",
-    "static/js/main.7e0eea68.chunk.js"
+    "static/js/main.d9a5e576.chunk.js"
   ]
 }
