@@ -31,7 +31,7 @@ function TodoIcon({ type, color = 'gray', onClick, id}) {
       className={`Icon-container Icon-container--${type}`}
       onClick={onClick}
     >
-      <div>{id }</div>
+      <div>{id}</div>
       {iconTypes[type](color)}
     </span>
   );

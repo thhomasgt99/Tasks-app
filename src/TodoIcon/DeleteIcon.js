@@ -4,7 +4,6 @@ import { useTodos } from '../App/useTodos';
 
 function DeleteIcon(props) {
 	const { deleteTodo }= useTodos()
-	console.log('desde deleteIcon: ' + props.text)
   return (
     <TodoIcon
       type="delete"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
 function useTodos() {
@@ -9,9 +9,9 @@ function useTodos() {
     loading,
     error,
   } = useLocalStorage('TODOS_V1', []);
-  const [searchValue, setSearchValue] = React.useState('');
-  const [openModal, setOpenModal] = React.useState(false);
-  const [Options, setOptions ] = React.useState(true);
+  const [searchValue, setSearchValue] = useState('');
+  const [openModal, setOpenModal] = useState(false);
+  const [options, setOptions ] = useState(true);
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
@@ -41,15 +41,14 @@ function useTodos() {
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex(todo => todo.text === text);
     const newTodos = [...todos];
-    newTodos[todoIndex].completed = true;
+    newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
     saveTodos(newTodos);
     window.location. reload()
   };
 
   const openOptions = (id)=>{
-    setOptions(!Options)
-    console.log(todos)
-    if(Options === true){
+    setOptions(!options)
+    if(options === true){
       const nodo = document.getElementById(id)
       nodo.style.display = 'flex'
     }else {
