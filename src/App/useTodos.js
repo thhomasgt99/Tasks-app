@@ -11,6 +11,7 @@ function useTodos() {
   } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = useState('');
   const [openModal, setOpenModal] = useState(false);
+  const [openEdit, setOpenEdit] = useState(false);
   const [options, setOptions ] = useState(true);
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
@@ -37,6 +38,14 @@ function useTodos() {
     saveTodos(newTodos);
     window.location. reload()
   };
+
+  const editTodo = (text, textnew )=>{
+    const todoIndex = todos.findIndex(todo => todo.text === text);//esto seria el indice osea un number
+    const newTodos = [...todos];
+    newTodos[todoIndex].text = textnew;
+    saveTodos(newTodos);
+    window.location. reload()
+  }
 
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex(todo => todo.text === text);
@@ -80,9 +89,12 @@ function useTodos() {
     completeTodo,
     deleteTodo,
     openModal,
+    openEdit, 
+    setOpenEdit,
     setOpenModal,
     sincronizeTodos,
     openOptions,
+    editTodo,
   };
 }
 

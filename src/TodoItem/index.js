@@ -25,7 +25,14 @@ function TodoItem(props) {
         id={id()}
       />
 
-      <Options completed={props.completed} text={props.text} id={`id-${id()}`}/>
+      <Options 
+        completed={props.completed} 
+        text={props.text}
+        id={`id-${id()}`} 
+        openEdit={props.openEdit}
+        setOpenEdit={props.setOpenEdit}
+        editTodo={props.editTodo}
+      />
     </li>
   );
 }

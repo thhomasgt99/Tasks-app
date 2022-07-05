@@ -9,9 +9,12 @@ import { TodosError } from '../TodosError';
 import { TodosLoading } from '../TodosLoading';
 import { EmptyTodos } from '../EmptyTodos';
 import { TodoForm } from '../TodoForm';
+import { EditForm } from '../EditForm';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
+import { EditPortal } from '../EditPortal';
 import { ChangeAlert } from '../ChangeAlert';
+
 
 function App() {
   const {
@@ -29,6 +32,9 @@ function App() {
     addTodo,
     sincronizeTodos,
     miArray,
+    openEdit,
+    setOpenEdit,
+    editTodo
   } = useTodos();
   return (
     <React.Fragment>
@@ -56,17 +62,20 @@ function App() {
           (searchText) => <p>No hay resultados para {searchText}</p>
         }
       >
-        
+
         {todo => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            // onDelete={() => deleteTodo(todo.text)}
-            totalTodos={totalTodos}
-            miArray={miArray}
-          />
+            <TodoItem
+              key={todo.text}
+              text={todo.text}
+              completed={todo.completed}
+              onComplete={() => completeTodo(todo.text)}
+              totalTodos={totalTodos}
+              miArray={miArray}
+              setOpenEdit={setOpenEdit}
+              openEdit={openEdit}
+              editTodo={editTodo}
+              
+            />
         )}
       </TodoList>
 
