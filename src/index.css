@@ -1,9 +1,16 @@
+*{
+  /* box-sizing: border-box; */
+  /* margin: 0%; */
+  /* padding: 0; */
+}
 body {
   margin: 0;
   padding: 0;
   background: #fcf6e6;
   color: #5f5e5e;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+
 }
 #root {
   margin: 0 auto;

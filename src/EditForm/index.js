@@ -1,8 +1,8 @@
 import React from 'react';
 import './EditForm.css';
 
-function EditForm({ setOpenEdit, text, editTodo}) {
-  const [newTodoValue, setNewTodoValue] = React.useState(text);
+function EditForm({ setOpenEdit, editTodo, index, miArray}) {
+  const [newTodoValue, setNewTodoValue] = React.useState(miArray[index].text);
 
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
@@ -12,19 +12,17 @@ function EditForm({ setOpenEdit, text, editTodo}) {
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    // addTodo(newTodoValue);
-    editTodo(text, newTodoValue);
+    editTodo( index, newTodoValue );
     setOpenEdit(false);
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className='formEdit' onSubmit={onSubmit}>
       <label>TODO actual</label>
       <textarea
 			target
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Etida tu todo"
       />
       <div className="EditForm-buttonContainer">
         <button

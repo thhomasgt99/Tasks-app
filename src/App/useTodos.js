@@ -36,15 +36,12 @@ function useTodos() {
       text,
     });
     saveTodos(newTodos);
-    window.location. reload()
   };
 
-  const editTodo = (text, textnew )=>{
-    const todoIndex = todos.findIndex(todo => todo.text === text);//esto seria el indice osea un number
+  const editTodo = (id,textnew)=>{
     const newTodos = [...todos];
-    newTodos[todoIndex].text = textnew;
+    newTodos[id].text = textnew;
     saveTodos(newTodos);
-    window.location. reload()
   }
 
   const completeTodo = (text) => {

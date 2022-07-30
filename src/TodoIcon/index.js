@@ -26,12 +26,13 @@ const iconTypes = {
 };
 
 function TodoIcon({ type, color = 'gray', onClick, id}) {
+  let ID = 1
   return (
     <span
       className={`Icon-container Icon-container--${type}`}
       onClick={onClick}
     >
-      <div>{id}</div>
+      {type === 'menu' ? <div>{id + 1}</div> : ''}
       {iconTypes[type](color)}
     </span>
   );

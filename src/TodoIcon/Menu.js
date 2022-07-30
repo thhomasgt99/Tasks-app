@@ -2,7 +2,7 @@ import React from 'react';
 import { useTodos } from '../App/useTodos';
 import { TodoIcon } from './';
 
-function Menu({id}) { //borre  onDelete
+function Menu({id}) {
   const { openOptions } = useTodos()
   return (
     <TodoIcon

@@ -9,10 +9,8 @@ import { TodosError } from '../TodosError';
 import { TodosLoading } from '../TodosLoading';
 import { EmptyTodos } from '../EmptyTodos';
 import { TodoForm } from '../TodoForm';
-import { EditForm } from '../EditForm';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
-import { EditPortal } from '../EditPortal';
 import { ChangeAlert } from '../ChangeAlert';
 
 
@@ -22,7 +20,7 @@ function App() {
     loading,
     searchedTodos,
     completeTodo,
-    deleteTodo,
+    // deleteTodo,
     openModal,
     setOpenModal,
     totalTodos,
