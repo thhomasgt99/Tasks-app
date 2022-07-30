@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tasks-app/static/css/main.c253e6ca.chunk.css",
-    "main.js": "/Tasks-app/static/js/main.aeb4b12b.chunk.js",
-    "main.js.map": "/Tasks-app/static/js/main.aeb4b12b.chunk.js.map",
+    "main.css": "/Tasks-app/static/css/main.1535737f.chunk.css",
+    "main.js": "/Tasks-app/static/js/main.53fcccf8.chunk.js",
+    "main.js.map": "/Tasks-app/static/js/main.53fcccf8.chunk.js.map",
     "runtime-main.js": "/Tasks-app/static/js/runtime-main.21d9133c.js",
     "runtime-main.js.map": "/Tasks-app/static/js/runtime-main.21d9133c.js.map",
-    "static/js/2.12bdf42c.chunk.js": "/Tasks-app/static/js/2.12bdf42c.chunk.js",
-    "static/js/2.12bdf42c.chunk.js.map": "/Tasks-app/static/js/2.12bdf42c.chunk.js.map",
+    "static/js/2.0e031dc8.chunk.js": "/Tasks-app/static/js/2.0e031dc8.chunk.js",
+    "static/js/2.0e031dc8.chunk.js.map": "/Tasks-app/static/js/2.0e031dc8.chunk.js.map",
     "index.html": "/Tasks-app/index.html",
-    "static/css/main.c253e6ca.chunk.css.map": "/Tasks-app/static/css/main.c253e6ca.chunk.css.map",
-    "static/js/2.12bdf42c.chunk.js.LICENSE.txt": "/Tasks-app/static/js/2.12bdf42c.chunk.js.LICENSE.txt",
+    "static/css/main.1535737f.chunk.css.map": "/Tasks-app/static/css/main.1535737f.chunk.css.map",
+    "static/js/2.0e031dc8.chunk.js.LICENSE.txt": "/Tasks-app/static/js/2.0e031dc8.chunk.js.LICENSE.txt",
     "static/media/check.fa4fb594.svg": "/Tasks-app/static/media/check.fa4fb594.svg",
     "static/media/delete.331149da.svg": "/Tasks-app/static/media/delete.331149da.svg",
     "static/media/edit.0f2469ed.svg": "/Tasks-app/static/media/edit.0f2469ed.svg",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.21d9133c.js",
-    "static/js/2.12bdf42c.chunk.js",
-    "static/css/main.c253e6ca.chunk.css",
-    "static/js/main.aeb4b12b.chunk.js"
+    "static/js/2.0e031dc8.chunk.js",
+    "static/css/main.1535737f.chunk.css",
+    "static/js/main.53fcccf8.chunk.js"
   ]
 }
