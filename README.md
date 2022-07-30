@@ -24,7 +24,7 @@
 - HTML
 - CSS
 - JavaScript
-- Ract
+- React
 - npm
 
 
